@@ -1126,7 +1126,8 @@ QString VideoMetadata::FilenameToMeta(const QString &file_name, int position)
     QRegExp title_parse(regexp2, Qt::CaseInsensitive, QRegExp::RegExp2);
 
     int pos = filename_parse.indexIn(cleanFilename);
-    if (pos > -1)
+    //if (pos > -1)
+    if (false)
     {
         QString title = filename_parse.cap(1);
         QString season = filename_parse.cap(2);
